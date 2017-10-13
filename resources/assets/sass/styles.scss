@@ -1,0 +1,41 @@
+.h-menu {
+	width:100%;
+	text-align: center;
+
+	& ul {
+
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: transparent;
+	    text-align: center;
+	}
+
+	& li {
+	    float: left;
+     	display:inline;
+	}
+
+	& li a {
+		position:relative;
+	    display: block;
+	    color: #333;
+	    text-align: center;	
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    & a:after, a:before {
+		  	display:block;
+		  	content: '';
+		  	border-bottom: solid 3px #019fb6;  
+		  	transform: scaleX(0);  
+		  	transition: transform 250ms ease-in-out;
+		}
+		& a:hover {
+		    transform: scaleX(1);
+		}
+	}
+
+	/* Change the link color to #111 (black) on hover */
+	& li a:hover:after, a:hover:before { transform: scaleX(1); }
+}
