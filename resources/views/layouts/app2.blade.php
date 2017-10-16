@@ -18,7 +18,18 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-
+                    <div class="">
+                        <a class="navbar-left-btn" href="{{url('https://www.facebook.com')}}"><i class="fa fa-lg fa-facebook"></i></a>
+                        <a class="navbar-left-btn" href="{{url('https://www.instagram.com')}}"><i class="fa fa-lg fa-instagram"></i></a>
+                        <a class="navbar-left-btn" href="{{url('https://www.pinterest.com')}}"><i class="fa fa-lg fa-pinterest"></i></a>  
+                    </div>
+                    <!-- Branding Image -->
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a> --}}
+                <div class="text-center">
+                    <a class="navbar-brand hidden-lg hidden-md visible-sm visible-xs" href="#">{{ config('app.name', 'AmandasPlacePH') }}</a>
+                </div>
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -26,21 +37,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <!-- Branding Image -->
-                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a> --}}
-
                 </div>
-
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                    
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>   
+                    <ul class="nav navbar-nav visible-lg visible-md hidden-sm hidden-xs">
+                        <li><a href=""><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-lg fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-lg fa-pinterest"></i></a></li>   
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -73,7 +77,7 @@
                         @endguest
                         <li><a href="{{route('cart')}}"><i class="fa fa-shopping-bag"></i> Shopping Bag</a></li>
                     </ul>
-                    <form class="navbar-form pull-right">
+                    <form class="navbar-form pull-right" >
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-group-btn">
@@ -84,7 +88,17 @@
                 </div>
             </div>
         </nav>
-
+        <div class="container-fluid">
+            <div class="row text-center">
+                <a href="" class="company-logo center-block">amanda's place</a>
+            </div>
+            <nav id="center-menu">
+                <a class="links" href="#">Home</a>
+                <a class="links" href="#">About</a>
+                <a class="links" href="#">Contact</a>
+                <a class="links" href="#">Shop</a>
+            </nav>
+        </div>
         @yield('content')
     </div>
 

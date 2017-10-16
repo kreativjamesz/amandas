@@ -1,41 +1,109 @@
-.h-menu {
-	width:100%;
-	text-align: center;
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1200px !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
 
-	& ul {
 
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    background-color: transparent;
-	    text-align: center;
-	}
-
-	& li {
-	    float: left;
-     	display:inline;
-	}
-
-	& li a {
-		position:relative;
-	    display: block;
-	    color: #333;
-	    text-align: center;	
-	    padding: 14px 16px;
-	    text-decoration: none;
-	    & a:after, a:before {
-		  	display:block;
-		  	content: '';
-		  	border-bottom: solid 3px #019fb6;  
-		  	transform: scaleX(0);  
-		  	transition: transform 250ms ease-in-out;
-		}
-		& a:hover {
-		    transform: scaleX(1);
-		}
-	}
-
-	/* Change the link color to #111 (black) on hover */
-	& li a:hover:after, a:hover:before { transform: scaleX(1); }
+@font-face {
+    font-family: 'Hero';
+    src:url('../fonts/Hero.ttf.woff') format('woff'),
+        url('../fonts/Hero.ttf.svg#Hero') format('svg'),
+        url('../fonts/Hero.ttf.eot'),
+        url('../fonts/Hero.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
+
+.navbar-left-btn {
+	color:#333;
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+	background-color: transparent;
+	z-index:4;
+
+  	&:focus {
+	  outline: 0;
+	}
+	& .icon-bar {
+	  display: block;
+	  width: 22px;
+	  height: 2px;
+	  border-radius: 1px;
+	}
+	& .icon-bar + .icon-bar {
+	  margin-top: 4px;
+	}
+}
+@media screen and (min-width: $screen-sm) {
+  .navbar-left-btn {
+    display: none;
+  }
+}
+
+a.company-logo {
+	font-family: 'Hero';
+	font-size:60px;
+	color:#333;
+	text-decoration:none;
+
+	@media screen and (max-width: $screen-sm){
+		font-size:50px;
+	}
+	@media screen and (max-width: $screen-xs){
+		font-size:30px;
+	}
+	
+}
+nav#center-menu  {
+  	text-align: center;
+  	font-family: Raleway;
+  	padding:15px 0px;
+}
+#center-menu {
+	background: transparent;
+}
+
+a.links {
+	transition: 0.15s ease;
+	background: transparent;
+	color: #777;
+	font-family: 'Hero';
+	font-size: 16px;
+	font-weight: 800;
+	text-decoration: none;
+	padding: 12px 20px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	margin:6px 0px;
+	@media screen and (max-width: $screen-sm){
+		font-size: 14px;
+	}
+	@media screen and (max-width: $screen-xs){
+		font-size: 12px;
+	}
+}
+a.links:hover {
+	color:#D9230F;
+  	border-top: 1px solid #D9230F;
+  	border-bottom: 1px solid #D9230F;
+}
+
+.navbar-brand {
+    position: absolute;
+    width:100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    display:table;
+    margin:0 auto;
+    z-index:1;
+}
+.navbar-toggle {
+    z-index:3;
+}
+

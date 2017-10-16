@@ -12,16 +12,6 @@
         </div>
         
     </div>
-    <div class="row text-center">
-        <img src="{{asset('img/apc-logo.png')}}" class="" style="width:500px;">
-    </div>
-    <div class="h-menu">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-        </ul>
-    </div>
+    
 </div>
 @endsection
