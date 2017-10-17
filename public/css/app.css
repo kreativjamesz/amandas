@@ -11405,7 +11405,7 @@ button.close {
 
 @font-face {
   font-family: 'Hero';
-  src: url(/fonts/Hero.ttf.woff?4087b2da55c02840ab3363cc72c37848) format("woff"), url(/fonts/Hero.ttf.svg?8a872a6cba9c885d65f38ac1d33856ae) format("svg"), url(/fonts/Hero.ttf.eot?85ed26ab418ed6b7f874f38df5c07464), url(/fonts/Hero.ttf.eot?85ed26ab418ed6b7f874f38df5c07464) format("embedded-opentype");
+  src: url(/fonts/Hero.ttf.woff?4087b2da55c02840ab3363cc72c37848) format("woff"), url(/fonts/Hero.ttf.svg?6cb80bb95308a2c6e001ca17cb7876c5) format("svg"), url(/fonts/Hero.ttf.eot?85ed26ab418ed6b7f874f38df5c07464), url(/fonts/Hero.ttf.eot?85ed26ab418ed6b7f874f38df5c07464) format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }

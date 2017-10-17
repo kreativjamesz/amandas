@@ -11,20 +11,19 @@
     <title>{{ config('app.name', 'AmandasPlacePH') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 </head>
 <body>
     <div id="app">
-        @include('layouts.partials.nav')
-        @guest
-            @include('layouts.partials.header')
-        @else
-            @include('layouts.partials.header')
-        @endguest
+        <div class="hidden-sm hidden-xs visible-md visible-lg">
+            @include('admin.layouts.partials.navbar')
+        </div>
         @yield('content')
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/admin.js') }}"></script>
 </body>
 </html>

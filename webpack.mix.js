@@ -13,3 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+mix.styles([
+    'public/css/admin.styles.css'
+], 'public/css/admin.css');
+
+mix.scripts([
+   'public/js/admin.scripts.js',
+], 'public/js/admin.js');
