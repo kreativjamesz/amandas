@@ -18,6 +18,8 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('admin.home');
+        $category = Category::find(1);
+        dd($category->products);  
+        //return view('admin.home');
     }
 }
