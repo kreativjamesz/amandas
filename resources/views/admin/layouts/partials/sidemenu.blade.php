@@ -15,8 +15,8 @@
                 <!-- Brand -->
                 <div class="brand-name-wrapper">
                     <a class="navbar-brand" href="#">
-                Search Your Listing
-            </a>
+                        Search Your Listing
+                    </a>
                 </div>
 
                 <!-- Search -->

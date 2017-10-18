@@ -1,7 +1,7 @@
 
 <nav class="container-fluid">
     <div class="row text-center">
-        <a href="" class="company-logo center-block">amanda's place</a>
+        <a href="" class="company-logo center-block animated bounceInLeft second">amanda's place</a>
     </div>
     <nav id="center-menu">
         <a class="links" href="#">Home</a>

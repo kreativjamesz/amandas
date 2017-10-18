@@ -1,0 +1,18 @@
+
+@import "admin.variables";
+@import "admin.bootswatch";
+
+// Hero Font
+@font-face {
+    font-family: 'Hero';
+    src:url('../fonts/Hero.ttf.woff') format('woff'),
+        url('../fonts/Hero.ttf.svg#Hero') format('svg'),
+        url('../fonts/Hero.ttf.eot'),
+        url('../fonts/Hero.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'Raleway';
+}

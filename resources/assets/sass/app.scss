@@ -4,7 +4,7 @@
 
 // Font Icons
 @import "node_modules/font-awesome/scss/font-awesome";
-
+@import "node_modules/pe7-icon/dist/dist/pe-icon-7-stroke";
 // Variables
 @import "variables";
 
@@ -13,3 +13,5 @@
 
 @import "styles";
 @import "bootswatch";
+
+@import "node_modules/animate.css/animate";

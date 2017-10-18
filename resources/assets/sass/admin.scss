@@ -1,0 +1,26 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Font Icons
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons");
+@import "node_modules/pe7-icon/dist/dist/pe-icon-7-stroke";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// Animate.css
+@import "node_modules/animate.css/animate";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Custom CSS
+@import "node_modules/startbootstrap-sb-admin-2/dist/css/sb-admin-2";
+
+// MetisMenu CSS
+@import "node_modules/metismenu/src/metisMenu";
+
+// Morris Charts CSS
+@import "node_modules/morris.js/morris";
+
+// Customs
+@import "admin.styles";

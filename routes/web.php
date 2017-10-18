@@ -16,7 +16,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('admin/', 'HomeController@index')->name('home');
+Route::group(array('prefix'=>'admin', 'namespace'=>'Admin'), function(){
+	Route::resource('/products','ProductController');
+	Route::resource('/users','UserController');
+	Route::resource('/roles','RoleController');
+	Route::resource('/permissions','PermissionController');
+});
 // Cart
 Route::get('/cart', 'CartController@index')->name('cart');
