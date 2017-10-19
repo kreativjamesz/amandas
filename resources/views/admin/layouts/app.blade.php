@@ -17,6 +17,6 @@
 <body>
 	@yield('body')
     <script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
-
+	<script type="text/javascript" src="{{asset('js/admin.scripts.js')}}"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ Auth::routes();
 Route::get('admin/', 'HomeController@index')->name('home');
 Route::group(array('prefix'=>'admin', 'namespace'=>'Admin'), function(){
 	Route::resource('/products','ProductController');
+	Route::get('/products/category','ProductController@category')->name('product.category');
 	Route::resource('/users','UserController');
 	Route::resource('/roles','RoleController');
 	Route::resource('/permissions','PermissionController');

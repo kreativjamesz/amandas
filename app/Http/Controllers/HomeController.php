@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Category;
+ 
 class HomeController extends Controller
 {
     public function __construct()
@@ -18,8 +19,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $category = Category::find(1);
-        dd($category->products);  
-        //return view('admin.home');
+        $category = Category::all();
+        return view('admin.home');
     }
 }

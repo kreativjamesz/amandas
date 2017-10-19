@@ -2,6 +2,8 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
+@import "variables";
+
 // Font Icons
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons");
 @import "node_modules/pe7-icon/dist/dist/pe-icon-7-stroke";
@@ -10,8 +12,11 @@
 // Animate.css
 @import "node_modules/animate.css/animate";
 
-// Bootstrap
+// Bootstrap 3
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Bootstrap 4
+@import "node_modules/bootstrap/css/bootstrap";
 
 // Custom CSS
 @import "node_modules/startbootstrap-sb-admin-2/dist/css/sb-admin-2";
@@ -21,6 +26,12 @@
 
 // Morris Charts CSS
 @import "node_modules/morris.js/morris";
+
+// Import editor css
+@import "node_modules/trumbowyg/dist/ui/trumbowyg";
+
+// Helper
+@import "helpers";
 
 // Customs
 @import "admin.styles";

@@ -251,7 +251,7 @@
                             <a href="{{ route('products.create') }}">Add New</a>
                         </li>
                         <li>
-                            <a href="{{ url('admin/products/categories') }}">Categories</a>
+                            <a href="{{ url('admin/products/category') }}">Category</a>
                         </li>
                         <li>
                             <a href="{{ url('admin/products/tags') }}">Tags</a>
